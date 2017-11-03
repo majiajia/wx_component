@@ -1,0 +1,24 @@
+
+<!--index.wxml-->
+<import src="../../itemview/riji/riji.wxml"/>
+<import src="../../itemview/block/block.wxml" />
+
+
+<view class="container">
+  <navigator class="sosou_container1" url="/pages/search/search" open-type="navigate">
+    <view class="sosou_container2">
+      <image class="img_find" src="/icon/icon_find.png"></image>
+      <text class="word_find">搜索、查看分类</text>
+    </view>
+  </navigator>
+
+ <scroll-view class="list" scroll-y="true" bindscrolltolower="loadMore" lower-threshold="60">
+  <view wx:for="{{datas}}" wx:for-item="itemdata" wx:key="itemdata.id">
+   <template is="item_riji" data="{{...itemdata}}"/>
+  </view>
+
+  <template is="item_block" data="{{...noData}}"/>
+ </scroll-view>
+  <image class="add_view" bindtap="addNewriji" src="/icon/icon_add.png"></image>
+</view>
+

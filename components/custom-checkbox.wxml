@@ -1,0 +1,4 @@
+<view>
+  <checkbox id="checkbox" checked />
+  <label for="checkbox" class="label" bindtap="labeltap"> {{title}} {{name}} </label>
+</view>

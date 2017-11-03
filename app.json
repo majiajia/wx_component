@@ -1,0 +1,12 @@
+{
+  "pages":[
+	"pages/index/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#43A2CE",
+    "navigationBarTitleText": "wx custom component demo",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh":false
+  }
+}
