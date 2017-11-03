@@ -1,10 +1,12 @@
 Component({
   properties:{
     title:{
-      type:String
+      type:String,
+      value:"default title",
     },
     name: {
-      type:String
+      type:String,
+      value:"default name",
     }
   },
   data:{},
